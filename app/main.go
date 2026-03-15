@@ -44,9 +44,9 @@ func main() {
 		if strings.HasPrefix(userinput, "type") {
 			typeText := strings.TrimPrefix(userinput, "type ")
 			if slices.Contains(validCommands, typeText) {
-				fmt.Println(userinput + " is a shell builtin")
+				fmt.Println(typeText + " is a shell builtin")
 			} else {
-				fmt.Println(userinput + ": not found")
+				fmt.Println(typeText + ": not found")
 			}
 		}
 	}
