@@ -38,6 +38,8 @@ func main() {
 		// echo command : print the input back to the user
 		if cmdName == "echo" {
 			fmt.Println(strings.Join(args, " "))
+			// echo 指令處理完就繼續下一輪迴圈，不需要往下走去檢查外部程式
+			continue
 		}
 
 		// type command : check fllowing string is valid command or not
